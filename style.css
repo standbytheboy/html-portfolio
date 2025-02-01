@@ -125,6 +125,13 @@ div h2 {
     text-align: center;
 }
 
+.subtitle {
+    text-align: center;
+    width: 100%;
+    margin: 20px 0;
+    color: #0D2149;
+}
+
 .project {
     flex-direction: column;
     text-align: center;
@@ -253,6 +260,15 @@ h3 {
     color: white;
     text-decoration: none;
     cursor: pointer;
+}
+
+footer p{
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    background-color: #111;
+    color: #A0C4E2;
+    padding: 20px;
 }
 
 @media (max-width: 1440px) {
