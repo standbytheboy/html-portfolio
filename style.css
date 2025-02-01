@@ -9,6 +9,10 @@
     font-family: "Monomaniac One", serif;
 }
 
+body {
+    background-color: #A0C4E2;
+}
+
 .flex {
     display: flex;
     justify-content: center;
@@ -44,6 +48,7 @@ main {
     background-color: #0D2149;
     color: #A0C4E2;
     padding: 0 120px 50px;
+    border-radius: 0 0 50px 50px;
 }
 
 h1 {
@@ -51,6 +56,7 @@ h1 {
     font-size: 155px;
     font-weight: 100;
     width: 1rem;
+    margin-bottom: -20px;
 }
 
 p {
@@ -84,6 +90,17 @@ p {
     background-color: black;
 }
 
+.me {
+    height: 625px;
+    width: 750px;
+    background-image: linear-gradient(to bottom, #0d214900, #0d214900, #0D2149), url(./img/cropped.png);
+    background-size: cover;
+}
+
+.main {
+    justify-content: space-between;
+}
+
 .projects {
     background-color: #A0C4E2;
     padding: 25px;
@@ -104,8 +121,34 @@ p {
 .circle {
     width: 280px;
     height: 280px;
-    background-color: black;
+    background-size: cover;
+    background-position: center;
     border-radius: 50%;
+    cursor: pointer;
+}
+
+.circle:hover {
+    opacity: 0.8;
+}
+
+.circle1 {
+    background-image: url(./img/siteSenac.png);
+}
+
+.circle2 {
+    background-image: url(./img/listaTarefas.png);
+}
+
+.circle3 {
+    background-image: url(./img/calculadora.png);
+}
+
+.circle4 {
+    background-image: url(./img/lojaProdutos.png);
+}
+
+.circle5 {
+    background-image: url(./img/jogoClick.png);
 }
 
 .experience {
@@ -114,6 +157,7 @@ p {
     background-color: #0D2149;
     gap: 40px;
     padding: 50px;
+    border-radius: 0 0 50px 50px;
 }
 
 .experience .title {
