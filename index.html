@@ -23,9 +23,10 @@
 
     <main>
         <div class="main flex">
-            <div>
+            <div class="media">
                 <h1>Lucas Morais</h1>
-                <p>Muito prazer, sou o Lucas, estudante de Design e Programação, atualmente sendo Instrutor de Informática,
+                <p>Muito prazer, sou o Lucas, estudante de Design e Programação, atualmente sendo Instrutor de
+                    Informática,
                     buscando uma oportunidade de mostrar meu talento ao mundo! Tenho conhecimento em:</p>
                 <div class="tags flex">
                     <div class="tag html">HTML</div>
@@ -44,24 +45,94 @@
         <h2 class="title">Projetos</h2>
         <div class="projects flex">
             <div class="project flex">
-                <div class="circle circle1"></div>
+                <div data-modal="modal1" class="openModal circle circle1"></div>
                 <p>Cópia do Site Senac SP</p>
             </div>
+            <div id="modal1" class="modal">
+                <div class="modal-content flex">
+                    <span class="close">&times;</span>
+                    <div>
+                        <h2>Cópia do Site Senac SP</h2>
+                        <p>Focado em aprimorar meu HTML e CSS, sem utilização de Frameworks ou Bibliotecas, refiz o
+                            design desse site que representa a Instituição na qual estou estudando. <em>Caso tenha interesse
+                                no projeto completo, basta clicar no vídeo!</em></p>
+                    </div>
+                    <a href="https://standbytheboy.github.io/senac_project/" target="_blank">
+                    <video src="./video/Senac SP.mp4" width="420" height="340" autoplay loop></video>
+                    </a>
+                </div>
+            </div>
+
             <div class="project flex">
-                <div class="circle circle2"></div>
+                <div data-modal="modal2" class="openModal circle circle2"></div>
                 <p>Lista de Tarefas em JavaScript</p>
             </div>
+            <div id="modal2" class="modal">
+                <div class="modal-content flex">
+                    <span class="close">&times;</span>
+                    <div>
+                        <h2>Lista de Tarefas em JavaScript</h2>
+                        <p>Projeto feito para manipulação do DOM, utilizando JavaScript. <em>Caso tenha interesse
+                            no projeto completo, basta clicar no vídeo!</em></p>
+                    </div>
+                    <a href="https://standbytheboy.github.io/UC3_TII09/projetos/lista-tarefas/lista-tarefas.html" target="_blank">
+                        <video src="./video/Lista de Tarefas.mp4" width="420" height="340" autoplay loop></video>
+                    </a>
+                </div>
+            </div>
+
             <div class="project flex">
-                <div class="circle circle3"></div>
+                <div data-modal="modal3" class="openModal circle circle3"></div>
                 <p>Calculadora em JavaScript</p>
             </div>
-            <div class="project flex">
-                <div class="circle circle4"></div>
-                <p>Lista de Venda de Produtos com Envio de Mensagem no Whatsapp</p>
+            <div id="modal3" class="modal">
+                <div class="modal-content flex">
+                    <span class="close">&times;</span>
+                    <div>
+                        <h2>Calculadora em JavaScript</h2>
+                        <p>Utilização do atributo "eval" para código otimizado e funcional. <em>Caso tenha interesse
+                                no projeto completo, basta clicar no vídeo!</em></p>
+                    </div>
+                    <a href="https://standbytheboy.github.io/UC3_TII09/projetos/calculadora/calculadora.html" target="_blank">
+                        <video src="./video/Calculadora.mp4" width="420" height="340" autoplay loop></video>
+                    </a>
+                </div>
             </div>
+
             <div class="project flex">
-                <div class="circle circle5"></div>
+                <div data-modal="modal4" class="openModal circle circle4"></div>
+                <p>Venda de Produtos com Envio de Mensagem no Whatsapp</p>
+            </div>
+            <div id="modal4" class="modal">
+                <div class="modal-content flex">
+                    <span class="close">&times;</span>
+                    <div>
+                        <h2>Venda de Produtos com Envio de Mensagem no Whatsapp</h2>
+                        <p>Tela simples, simulando venda de produtos, que facilita o contato entre o usuário e o vendedor, através de API do Whatsapp de forma simples e intuitiva. <em>Caso tenha interesse
+                                no projeto completo, basta clicar no vídeo!</em></p>
+                    </div>
+                    <a href="https://standbytheboy.github.io/UC3_TII09/projetos/loja_produtos/index.html" target="_blank">
+                    <video src="./video/Loja de Produtos.mp4" width="420" height="340" autoplay loop></video>
+                    </a>
+                </div>
+            </div>
+
+            <div class="project flex">
+                <div data-modal="modal5" class="openModal circle circle5"></div>
                 <p>Jogo "Clique no Quadrado"</p>
+            </div>
+            <div id="modal5" class="modal">
+                <div class="modal-content flex">
+                    <span class="close">&times;</span>
+                    <div>
+                        <h2>Jogo "Clique no Quadrado"</h2>
+                        <p>Jogo para entretenimento de qualquer usuário. Feito com funções que são iniciadas ao clicar no botão de "Iniciar Jogo". <em>Caso tenha interesse
+                                no projeto completo, basta clicar no vídeo!</em></p>
+                    </div>
+                    <a href="https://standbytheboy.github.io/UC3_TII09/projetos/click_quadrado/index.html" target="_blank">
+                    <video src="./video/Jogo Click.mp4" width="420" height="340" autoplay loop></video>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -105,24 +176,34 @@
     <section class="contacts flex">
         <h2 class="title">Contatos</h2>
         <div class="socialMedia flex">
-            <div class="social flex">
-                <img src="./img/linkedInIcon.svg" alt="">
-                <p>LinkedIn</p>
-            </div>
-            <div class="social flex">
-                <img src="./img/githubIcon.svg" alt="">
-                <p>GitHub</p>
-            </div>
-            <div class="social flex">
-                <img src="./img/whatsappIcon.svg" alt="">
-                <p>Whatsapp</p>
-            </div>
-            <div class="social flex">
-                <img src="./img/emailIcon.svg" alt="">
-                <p>Email</p>
-            </div>
+            <a href="https://www.linkedin.com/in/lucas-morais-149556252/">
+                <div class="social flex">
+                    <img src="./img/linkedInIcon.svg" alt="">
+                    <p>LinkedIn</p>
+                </div>
+            </a>
+            <a href="https://github.com/standbytheboy">
+                <div class="social flex">
+                    <img src="./img/githubIcon.svg" alt="">
+                    <p>GitHub</p>
+                </div>
+            </a>
+            <a href="https://wa.me/5511986466484?text=Olá, acabei de vir do seu portfólio!">
+                <div class="social flex">
+                    <img src="./img/whatsappIcon.svg" alt="">
+                    <p>Whatsapp</p>
+                </div>
+            </a>
+            <a href="mailto:moraislcs05@gmail.com">
+                <div class="social flex">
+                    <img src="./img/emailIcon.svg" alt="">
+                    <p>Email</p>
+                </div>
+            </a>
         </div>
     </section>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>
