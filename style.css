@@ -25,7 +25,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* Alinha verticalmente os itens */
     padding: 30px 120px;
     background-color: #0D2149;
     position: relative;
@@ -35,7 +34,6 @@ body {
 a {
     color: #A0C4E2;
     text-decoration: none;
-    /* Remove o sublinhado dos links */
 }
 
 button:hover {
@@ -63,7 +61,8 @@ button:hover {
     margin: 3px 0;
 }
 
-/* Media Queries para Responsividade */
+/* =================== Menu Hambúrguer =================== */
+
 @media (max-width: 768px) {
     .nav-links {
         display: none;
