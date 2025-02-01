@@ -308,4 +308,65 @@ footer p{
         width: 26rem;
         font-size: 1.1rem;
     }
+
+    .modal-content {
+        flex-wrap: wrap;
+        margin: 15%;
+        padding: 20px;
+    }
+    
+    .close {
+        color: #aaa;
+        font-size: 28px;
+        font-weight: bold;
+        position: absolute;
+        top: 125px;
+        right: 140px;
+    }
+}
+
+@media (max-width: 768px) {
+    .modal-content {
+        flex-wrap: wrap;
+        margin: 10%;
+        padding: 15px;
+        position: absolute;
+    }
+    
+    .close {
+        display: none;
+    }
+}
+
+@media (max-width: 568px) {
+    .modal-content video {
+        width: 320px;
+        height: fit-content;
+    }
+
+    .modal-content {
+        width: 80%;
+        height: 70%;
+    }
+
+    .modal-content h2 {
+        width: 80%;
+    }
+
+    .modal-content p{
+        font-size: 1.2rem;
+        width: 80%;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .align {
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 }
