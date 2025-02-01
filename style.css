@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Monomaniac+One&family=Paytone+One&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -24,12 +24,18 @@ body {
 .navList {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    /* Alinha verticalmente os itens */
     padding: 30px 120px;
     background-color: #0D2149;
+    position: relative;
+    /* Para o menu toggle */
 }
 
 a {
     color: #A0C4E2;
+    text-decoration: none;
+    /* Remove o sublinhado dos links */
 }
 
 button:hover {
@@ -42,6 +48,54 @@ button:hover {
     border: none;
     border-radius: 50px;
     cursor: pointer;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: #A0C4E2;
+    margin: 3px 0;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: #A0C4E2;
+        padding: 20px 0;
+        width: 200px;
+        z-index: 1;
+        -webkit-box-shadow: 10px 10px 16px -8px rgba(0, 0, 0, 1);
+        -moz-box-shadow: 10px 10px 16px -8px rgba(0, 0, 0, 1);
+        box-shadow: 10px 10px 16px -8px rgba(0, 0, 0, 1);
+    }
+
+    .nav-links a {
+        color: #0D2149;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .navList {
+        padding: 30px 20px;
+    }
 }
 
 main {
@@ -116,9 +170,9 @@ div h2 {
 .projects {
     background-color: #A0C4E2;
     padding: 50px;
-    display: flex; 
+    display: flex;
     flex-wrap: wrap;
-    justify-content: center;  
+    justify-content: center;
     gap: 50px;
 }
 
@@ -181,8 +235,8 @@ div h2 {
 
 @media (max-width: 768px) {
     .projects {
-        padding: 30px; 
-        gap: 30px;  
+        padding: 30px;
+        gap: 30px;
     }
 
     .title {
@@ -190,8 +244,8 @@ div h2 {
     }
 
     .circle {
-        width: 200px; 
-        height: 200px; 
+        width: 200px;
+        height: 200px;
     }
 
 }
@@ -202,8 +256,8 @@ div h2 {
     }
 
     .circle {
-        width: 150px; 
-        height: 150px; 
+        width: 150px;
+        height: 150px;
     }
 
     .project p {
@@ -240,7 +294,7 @@ div h2 {
 }
 
 h3 {
-    color:#A0C4E2;
+    color: #A0C4E2;
     font-weight: 100;
     font-size: 25px;
 }
@@ -306,7 +360,7 @@ h3 {
     cursor: pointer;
 }
 
-footer p{
+footer p {
     margin-top: 20px;
     text-align: center;
     width: 100%;
@@ -324,7 +378,7 @@ footer p{
     h1 {
         font-size: 100px;
     }
-    
+
     p {
         width: 26rem;
         font-size: 1.1rem;
@@ -332,11 +386,15 @@ footer p{
 }
 
 @media (max-width: 1120px) {
-    .main, .media, .tags {
+
+    .main,
+    .media,
+    .tags {
         text-align: center;
         justify-content: center;
         align-items: center;
     }
+
     .me {
         height: 300px;
         width: 330px;
@@ -346,7 +404,7 @@ footer p{
         font-size: 100px;
         width: fit-content;
     }
-    
+
     p {
         width: 26rem;
         font-size: 1.1rem;
@@ -357,7 +415,7 @@ footer p{
         margin: 15%;
         padding: 20px;
     }
-    
+
     .close {
         color: #aaa;
         font-size: 28px;
@@ -385,14 +443,14 @@ footer p{
     .project {
         padding: 0;
     }
-    
+
     .modal-content {
         flex-wrap: wrap;
         margin: 10%;
         padding: 15px;
         position: absolute;
     }
-    
+
     .close {
         display: none;
     }
@@ -431,7 +489,7 @@ footer p{
         width: 80%;
     }
 
-    .modal-content p{
+    .modal-content p {
         font-size: 1.2rem;
         width: 80%;
         text-align: center;
@@ -454,12 +512,15 @@ footer p{
         width: 90%;
         margin: 0 auto;
     }
-    .navList {
-        display: none;
-    }
-
-    .main, .experience {
+    .main,
+    .experience {
         width: 100%;
     }
 }
 
+@media (max-width: 360px) {
+    .me {
+        width: 220px;
+        height: 200px;
+    }
+}
