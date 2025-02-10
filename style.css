@@ -528,4 +528,8 @@ footer p {
         width: 220px;
         height: 200px;
     }
+
+    .modal-content video {
+        display: none;
+    }
 }
