@@ -185,7 +185,6 @@ div h2 {
 .subtitle {
     text-align: center;
     width: 100%;
-    margin: 20px 0;
     color: #0D2149;
 }
 
@@ -294,7 +293,6 @@ div h2 {
     width: 970px;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
     text-align: center;
 }
 
@@ -334,19 +332,29 @@ h3 {
     z-index: 1;
     left: 0;
     top: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modal-content {
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     background-color: #0D2149;
     color: whitesmoke;
     margin: 15% auto;
-    padding: 0 40px;
+    padding: 4rem;
     width: fit-content;
     border-radius: 8px;
+    position: relative;
+    align-items: space-around;
+}
+
+.modal-content video {
+    max-width: 100%;
+}
+
+.modal-content p {
+    max-width: 90%;
 }
 
 .close {
@@ -354,8 +362,8 @@ h3 {
     font-size: 28px;
     font-weight: bold;
     position: absolute;
-    top: 290px;
-    right: 500px;
+    top: 10px;
+    right: 30px;
 }
 
 .close:hover,
@@ -373,6 +381,9 @@ footer p {
     color: #A0C4E2;
     padding: 20px;
 }
+
+
+/* ================================ RESPONSIVIDADE ================================ */
 
 @media (max-width: 1440px) {
     .me {
@@ -415,21 +426,6 @@ footer p {
         font-size: 1.1rem;
     }
 
-    .modal-content {
-        flex-wrap: wrap;
-        margin: 15%;
-        padding: 20px;
-    }
-
-    .close {
-        color: #aaa;
-        font-size: 28px;
-        font-weight: bold;
-        position: absolute;
-        top: 125px;
-        right: 140px;
-    }
-
     .xp {
         justify-content: center;
         padding: 0 2rem;
@@ -442,6 +438,11 @@ footer p {
     .projects {
         padding: 30px 20px;
     }
+
+    .modal-content {
+        margin: 15%;
+        height: fit-content;
+    }
 }
 
 @media (max-width: 768px) {
@@ -449,11 +450,8 @@ footer p {
         padding: 0;
     }
 
-    .modal-content {
-        flex-wrap: wrap;
-        margin: 10%;
-        padding: 15px;
-        position: absolute;
+    .align {
+        margin-top: 3rem;
     }
 
     .experience {
@@ -463,6 +461,10 @@ footer p {
 
     .xp {
         padding: 0 1rem;
+    }
+
+    .modal-content {
+        margin: 5%;
     }
 }
 
@@ -476,28 +478,6 @@ footer p {
         text-align: center;
     }
 
-    .modal-content video {
-        width: 320px;
-        height: fit-content;
-    }
-
-    .modal-content {
-        width: 80%;
-        height: 70%;
-    }
-
-    .modal-content h2 {
-        width: 80%;
-    }
-
-    .modal-content p {
-        font-size: 1.2rem;
-        width: 80%;
-        text-align: center;
-        margin: 0;
-        padding: 0;
-    }
-
     .align {
         text-align: center;
         margin: 0 auto;
@@ -505,6 +485,10 @@ footer p {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+    }
+    .modal-content {
+        margin: 20% auto;
+        width: 30rem;
     }
 }
 
@@ -521,6 +505,15 @@ footer p {
     .project {
         width: 90%;
     }
+    
+    .modal-content {
+        margin: 20% auto;
+        width: 22rem;
+    }
+
+    .modal-content p {
+        width: 20rem;
+    }
 }
 
 @media (max-width: 360px) {
@@ -528,8 +521,21 @@ footer p {
         width: 220px;
         height: 200px;
     }
+    .modal-content {
+        margin: 50% auto;
+        width: 18rem;
+    }
+
+    .modal-content h2 {
+        width: 15rem;
+    }
+
+    .modal-content p {
+        width: 15rem;
+    }
 
     .modal-content video {
-        display: none;
+        width: 100%;
+        height: 100%;
     }
 }
