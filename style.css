@@ -341,7 +341,7 @@ h3 {
     flex-wrap: wrap;
     background-color: #0D2149;
     color: whitesmoke;
-    margin: 15% auto;
+    margin: 200px auto;
     padding: 4rem;
     width: fit-content;
     border-radius: 8px;
@@ -440,8 +440,8 @@ footer p {
     }
 
     .modal-content {
-        margin: 15%;
-        height: fit-content;
+        margin: 100px auto;
+        width: min-content;
     }
 }
 
@@ -464,7 +464,8 @@ footer p {
     }
 
     .modal-content {
-        margin: 5%;
+        margin: 70px auto;
+        width: min-content;
     }
 }
 
@@ -487,7 +488,7 @@ footer p {
         flex-direction: column;
     }
     .modal-content {
-        margin: 20% auto;
+        margin: 90px auto;
         width: 30rem;
     }
 }
@@ -507,7 +508,7 @@ footer p {
     }
     
     .modal-content {
-        margin: 20% auto;
+        margin: 100px auto;
         width: 22rem;
     }
 
@@ -522,7 +523,7 @@ footer p {
         height: 200px;
     }
     .modal-content {
-        margin: 50% auto;
+        margin: 200px auto;
         width: 18rem;
     }
 
