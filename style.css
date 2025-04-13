@@ -283,17 +283,16 @@ div h2 {
 }
 
 .xp {
-    justify-content: space-between;
-    padding: 0 7rem;
+    flex-direction: column;
 }
 
 .cardXP {
+    color: #0D2149;
     background-color: #A0C4E2;
-    padding: 20px;
+    padding: 1.15rem;
     border-radius: 20px;
-    width: 970px;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    width: 80%;
+    font-size: 1.15rem;
     text-align: center;
 }
 
@@ -488,6 +487,7 @@ footer p {
         align-items: center;
         flex-direction: column;
     }
+
     .modal-content {
         margin: 90px auto;
         width: 30rem;
@@ -499,6 +499,7 @@ footer p {
         width: 90%;
         margin: 0 auto;
     }
+
     .main,
     .experience {
         width: 100%;
@@ -507,7 +508,7 @@ footer p {
     .project {
         width: 90%;
     }
-    
+
     .modal-content {
         margin: 100px auto;
         width: 22rem;
@@ -523,6 +524,7 @@ footer p {
         width: 220px;
         height: 200px;
     }
+
     .modal-content {
         margin: 200px auto;
         width: 18rem;
