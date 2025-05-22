@@ -1,238 +1,262 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
     <title>Lucas Morais</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav class="navList">
-            <div class="menu-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-            <ul class="flex nav-links">
-                <li><a href="#">Início</a></li>
-                <li><a href="#projects">Projetos</a></li>
-                <li><a href="#experience">Experiência</a></li>
-                <li><a href="#contacts">Contatos</a></li>
-            </ul>
-            <a href="./Lucas Morais da Silva - Currículo.pdf" download=""><button class="btnCV">CV</button></a>
-        </nav>
+      <nav class="navList" aria-label="Navegação principal">
+        <div class="menu-toggle" id="mobile-menu" aria-label="Menu mobile">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="flex nav-links">
+          <li><a href="#">Início</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#experience">Experiência</a></li>
+          <li><a href="#contacts">Contatos</a></li>
+        </ul>
+        <a href="./Lucas Morais da Silva - Currículo.pdf" download="">
+          <button class="btnCV">CV</button>
+        </a>
+      </nav>
     </header>
 
     <main>
-        <div class="main flex">
-            <div class="media">
-                <h1>Lucas Morais</h1>
-                <p>Muito prazer, sou o Lucas, estudante de Design e Programação, atualmente sendo Instrutor de
-                    Informática,
-                    buscando uma oportunidade de mostrar meu talento ao mundo! Tenho conhecimento em:</p>
-                <div class="tags flex">
-                    <div class="tag html">HTML</div>
-                    <div class="tag css">CSS</div>
-                    <div class="tag js">JavaScript</div>
-                    <div class="tag figma">Figma</div>
-                </div>
-            </div>
-            <div>
-                <div class="me"></div>
-            </div>
-        </div>
+      <section class="main flex" aria-label="Apresentação pessoal">
+        <article class="media">
+          <h1>Lucas Morais</h1>
+          <p>
+            Muito prazer, sou o Lucas, estudante de Design e Programação,
+            atualmente sendo Instrutor de Informática, buscando uma oportunidade
+            de mostrar meu talento ao mundo! Tenho conhecimento em:
+          </p>
+          <div class="tags flex">
+            <span class="tag html">HTML</span>
+            <span class="tag css">CSS</span>
+            <span class="tag js">JavaScript</span>
+            <span class="tag figma">Figma</span>
+          </div>
+        </article>
+        <figure class="me" aria-label="Imagem de Lucas Morais"></figure>
+      </section>
     </main>
 
     <section class="projects" id="projects">
         <h2 class="title">Projetos</h2>
         <p class="subtitle">Clique nos projetos para ver mais sobre eles!</p>
         <div class="projects flex">
-            <div class="project flex">
-                <div data-modal="modal1" class="openModal circle circle1"></div>
-                <p>Cópia do Site Senac SP</p>
+      
+          <article class="project flex">
+            <button data-modal="modal1" class="openModal circle circle1" aria-label="Abrir Cópia do Site Senac SP"></button>
+            <p>Cópia do Site Senac SP</p>
+          </article>
+          <dialog id="modal1" class="modal">
+            <div class="modal-content flex">
+              <span class="close">&times;</span>
+              <div class="align">
+                <h2>Cópia do Site Senac SP</h2>
+                <p>
+                  Focado em aprimorar meu HTML e CSS, sem utilização de frameworks ou bibliotecas, refiz o design deste site que representa a instituição na qual estou estudando.
+                  <em>Caso tenha interesse no projeto completo, basta clicar no vídeo!</em>
+                </p>
+              </div>
+              <a href="https://standbytheboy.github.io/senac_project/" target="_blank">
+                <video src="./video/Senac SP.mp4" width="420" height="340" loop playsinline autoplay></video>
+              </a>
             </div>
-            <div id="modal1" class="modal">
-                <div class="modal-content flex">
-                    <span class="close">&times;</span>
-                    <div class="align">
-                        <h2>Cópia do Site Senac SP</h2>
-                        <p>Focado em aprimorar meu HTML e CSS, sem utilização de Frameworks ou Bibliotecas, refiz o
-                            design desse site que representa a Instituição na qual estou estudando. <em>Caso tenha interesse
-                                no projeto completo, basta clicar no vídeo!</em></p>
-                    </div>
-                    <a href="https://standbytheboy.github.io/senac_project/" target="_blank">
-                    <video src="./video/Senac SP.mp4" width="420" height="340" loop playsinline autoplay></video>
-                    </a>
-                </div>
+          </dialog>
+      
+          <article class="project flex">
+            <button data-modal="modal2" class="openModal circle circle2" aria-label="Abrir Lista de Tarefas em JavaScript"></button>
+            <p>Lista de Tarefas em JavaScript</p>
+          </article>
+          <dialog id="modal2" class="modal">
+            <div class="modal-content flex">
+              <span class="close">&times;</span>
+              <div class="align">
+                <h2>Lista de Tarefas em JavaScript</h2>
+                <p>
+                  Projeto feito para praticar a manipulação do DOM utilizando JavaScript puro. O usuário pode adicionar, marcar como concluída e remover tarefas.
+                  <em>Caso tenha interesse no projeto completo, basta clicar no vídeo!</em>
+                </p>
+              </div>
+              <a href="https://standbytheboy.github.io/UC3_TII09/projetos/lista-tarefas/lista-tarefas.html" target="_blank">
+                <video src="./video/Lista de Tarefas.mp4" width="420" height="340" loop playsinline autoplay></video>
+              </a>
             </div>
-
-            <div class="project flex">
-                <div data-modal="modal2" class="openModal circle circle2"></div>
-                <p>Lista de Tarefas em JavaScript</p>
+          </dialog>
+      
+          <article class="project flex">
+            <button data-modal="modal3" class="openModal circle circle3" aria-label="Abrir Calculadora em JavaScript"></button>
+            <p>Calculadora em JavaScript</p>
+          </article>
+          <dialog id="modal3" class="modal">
+            <div class="modal-content flex">
+              <span class="close">&times;</span>
+              <div class="align">
+                <h2>Calculadora em JavaScript</h2>
+                <p>
+                  Projeto criado para praticar operações aritméticas e manipulação de eventos, utilizando o método "eval" para execução das expressões matemáticas.
+                  <em>Caso tenha interesse no projeto completo, basta clicar no vídeo!</em>
+                </p>
+              </div>
+              <a href="https://standbytheboy.github.io/UC3_TII09/projetos/calculadora/calculadora.html" target="_blank">
+                <video src="./video/Calculadora.mp4" width="420" height="340" loop playsinline autoplay></video>
+              </a>
             </div>
-            <div id="modal2" class="modal">
-                <div class="modal-content flex">
-                    <span class="close">&times;</span>
-                    <div class="align">
-                        <h2>Lista de Tarefas em JavaScript</h2>
-                        <p>Projeto feito para manipulação do DOM, utilizando JavaScript. <em>Caso tenha interesse
-                            no projeto completo, basta clicar no vídeo!</em></p>
-                    </div>
-                    <a href="https://standbytheboy.github.io/UC3_TII09/projetos/lista-tarefas/lista-tarefas.html" target="_blank">
-                        <video src="./video/Lista de Tarefas.mp4" width="420" height="340" loop playsinline autoplay></video>
-                    </a>
-                </div>
+          </dialog>
+      
+          <article class="project flex">
+            <button data-modal="modal4" class="openModal circle circle4" aria-label="Abrir Venda de Produtos com Envio de Mensagem no Whatsapp"></button>
+            <p>Venda de Produtos com Envio de Mensagem no Whatsapp</p>
+          </article>
+          <dialog id="modal4" class="modal">
+            <div class="modal-content flex">
+              <span class="close">&times;</span>
+              <div class="align">
+                <h2>Venda de Produtos com Envio de Mensagem no Whatsapp</h2>
+                <p>
+                  Interface simples simulando a venda de produtos, facilitando o contato entre o usuário e o vendedor por meio de uma integração com a API do Whatsapp.
+                  <em>Caso tenha interesse no projeto completo, basta clicar no vídeo!</em>
+                </p>
+              </div>
+              <a href="https://standbytheboy.github.io/UC3_TII09/projetos/loja_produtos/index.html" target="_blank">
+                <video src="./video/Loja de Produtos.mp4" width="420" height="340" loop playsinline autoplay></video>
+              </a>
             </div>
-
-            <div class="project flex">
-                <div data-modal="modal3" class="openModal circle circle3"></div>
-                <p>Calculadora em JavaScript</p>
+          </dialog>
+      
+          <article class="project flex">
+            <button data-modal="modal5" class="openModal circle circle5" aria-label="Abrir Jogo Clique no Quadrado"></button>
+            <p>Jogo "Clique no Quadrado"</p>
+          </article>
+          <dialog id="modal5" class="modal">
+            <div class="modal-content flex">
+              <span class="close">&times;</span>
+              <div class="align">
+                <h2>Jogo "Clique no Quadrado"</h2>
+                <p>
+                  Jogo simples e divertido para usuários de todas as idades. As funções são ativadas ao clicar no botão "Iniciar Jogo" e testam a agilidade do jogador.
+                  <em>Caso tenha interesse no projeto completo, basta clicar no vídeo!</em>
+                </p>
+              </div>
+              <a href="https://standbytheboy.github.io/UC3_TII09/projetos/click_quadrado/index.html" target="_blank">
+                <video src="./video/Jogo Click.mp4" width="420" height="340" loop playsinline autoplay></video>
+              </a>
             </div>
-            <div id="modal3" class="modal">
-                <div class="modal-content flex">
-                    <span class="close">&times;</span>
-                    <div class="align">
-                        <h2>Calculadora em JavaScript</h2>
-                        <p>Utilização do atributo "eval" para código otimizado e funcional. <em>Caso tenha interesse
-                                no projeto completo, basta clicar no vídeo!</em></p>
-                    </div>
-                    <a href="https://standbytheboy.github.io/UC3_TII09/projetos/calculadora/calculadora.html" target="_blank">
-                        <video src="./video/Calculadora.mp4" width="420" height="340" loop playsinline autoplay></video>
-                    </a>
-                </div>
+          </dialog>
+      
+          <article class="project flex">
+            <button data-modal="modal6" class="openModal circle circle6" aria-label="Abrir Sound Tito"></button>
+            <p>Sound Tito</p>
+          </article>
+          <dialog id="modal6" class="modal">
+            <div class="modal-content flex">
+              <span class="close">&times;</span>
+              <div class="align">
+                <h2>Sound Tito</h2>
+                <p>
+                  Projeto desenvolvido com foco em interações usando JavaScript. Trata-se de uma escola de música fictícia que oferece aulas de Violão, Violino, Piano e Bateria.
+                  <em>Caso tenha interesse no projeto completo, basta clicar no vídeo!</em>
+                </p>
+              </div>
+              <a href="https://standbytheboy.github.io/sound_tito/" target="_blank">
+                <video src="./video/SoundTito.mp4" width="420" height="340" loop playsinline autoplay></video>
+              </a>
             </div>
-
-            <div class="project flex">
-                <div data-modal="modal4" class="openModal circle circle4"></div>
-                <p>Venda de Produtos com Envio de Mensagem no Whatsapp</p>
-            </div>
-            <div id="modal4" class="modal">
-                <div class="modal-content flex">
-                    <span class="close">&times;</span>
-                    <div class="align">
-                        <h2>Venda de Produtos com Envio de Mensagem no Whatsapp</h2>
-                        <p>Tela simples, simulando venda de produtos, que facilita o contato entre o usuário e o vendedor, através de API do Whatsapp de forma simples e intuitiva. <em>Caso tenha interesse
-                                no projeto completo, basta clicar no vídeo!</em></p>
-                    </div>
-                    <a href="https://standbytheboy.github.io/UC3_TII09/projetos/loja_produtos/index.html" target="_blank">
-                    <video src="./video/Loja de Produtos.mp4" width="420" height="340" loop playsinline autoplay></video>
-                    </a>
-                </div>
-            </div>
-
-            <div class="project flex">
-                <div data-modal="modal5" class="openModal circle circle5"></div>
-                <p>Jogo "Clique no Quadrado"</p>
-            </div>
-            <div id="modal5" class="modal">
-                <div class="modal-content flex">
-                    <span class="close">&times;</span>
-                    <div class="align">
-                        <h2>Jogo "Clique no Quadrado"</h2>
-                        <p>Jogo para entretenimento de qualquer usuário. Feito com funções que são iniciadas ao clicar no botão de "Iniciar Jogo". <em>Caso tenha interesse
-                                no projeto completo, basta clicar no vídeo!</em></p>
-                    </div>
-                    <a href="https://standbytheboy.github.io/UC3_TII09/projetos/click_quadrado/index.html" target="_blank">
-                    <video src="./video/Jogo Click.mp4" width="420" height="340" loop playsinline autoplay></video>
-                    </a>
-                </div>
-            </div>
-
-            <div class="project flex">
-                <div data-modal="modal6" class="openModal circle circle6"></div>
-                <p>Sound Tito</p>
-            </div>
-            <div id="modal6" class="modal">
-                <div class="modal-content flex">
-                    <span class="close">&times;</span>
-                    <div class="align">
-                        <h2>Sound Tito</h2>
-                        <p>Site voltado para interações em JavaScript, apresentando uma escola de música fictícia, que oferta aulas de Violão, Violino, Piano e Bateria. <em>Caso tenha interesse
-                                no projeto completo, basta clicar no vídeo!</em></p>
-                    </div>
-                    <a href="https://standbytheboy.github.io/sound_tito/" target="_blank">
-                    <video src="./video/SoundTito.mp4" width="420" height="340" loop playsinline autoplay></video>
-                    </a>
-                </div>
-            </div>
+          </dialog>
+      
         </div>
+      </section>
+      
+
+    <section
+      id="experience"
+      class="experience"
+      aria-labelledby="title-experience"
+    >
+      <h2 id="title-experience" class="title">Experiência</h2>
+      <div class="experience">
+        <article class="xp flex">
+          <h3>Instrutor de Cursos Profissionalizantes</h3>
+          <p class="cardXP">
+            Como Instrutor, já ministrei aulas de conteúdos sobre Pacote Office,
+            Marketing, mas devo dar destaque à experiência com Design, na qual
+            me dediquei aos estudos sobre a ferramenta de Design Figma, também
+            em Heurísticas de Nielsen, Psicologia das Cores, UX e UI, Briefing e
+            Wireframe. Também é válido citar a parte de Programação Mobile, onde
+            estudei sobre Dart e seu Framework Flutter, o qual disponibiliza
+            utilização tanto em Android, quanto IOS.
+          </p>
+        </article>
+        <article class="xp flex">
+          <h3>Cursos e Estudos Autônomos</h3>
+          <p class="cardXP">
+            Tenho conhecimento com JavaScript, utilizando a plataforma
+            Roadmap.sh como referência de estudos, além de diversos cursos e
+            formações feitos na plataforma Alura. Atualmente cursando Técnico em
+            Informática para Internet na instituição Senac SP, onde ao
+            finalizar, terei aprimorado meu conhecimento tanto em Front-End,
+            Back-End e Mobile.
+          </p>
+        </article>
+        <article class="xp flex">
+          <h3>Extras</h3>
+          <p class="cardXP">
+            GitHub intermediário. Desenvolvi sozinho a habilidade de desenhar
+            realismo.
+          </p>
+        </article>
+      </div>
     </section>
 
-    <section class="experience" id="experience">
-        <h2 class="title">Experiência</h2>
-        <div class="experience">
-            <div class="xp flex">
-                <h3>Instrutor de Cursos Profissionalizantes</h3>
-                <p class="cardXP">Como Instrutor, já ministrei aulas de conteúdos sobre Pacote Office, Marketing,
-                    mas devo
-                    dar
-                    destaque à experiência com Design, na qual me dediquei aos estudos sobre a ferramenta de Design
-                    Figma,
-                    também em Heurísticas de Nielsen, Psicologia das Cores, UX e UI, Briefing e Wireframe. Também é
-                    válido
-                    citar a parte de Programação Mobile, onde estudei sobre Dart e seu Framework Flutter, o qual
-                    disponibiliza utilização tanto em Android, quanto IOS. </p>
-            </div>
-
-            <div class="xp flex">
-                <h3>Cursos e Estudos Autônomos</h3>
-                <p class="cardXP">Tenho conhecimento com JavaScript, utilizando a plataforma Roadmap.sh como referência
-                    de
-                    estudos, além de diversos cursos e formações feitos na plataforma Alura. Atualmente cursando Técnico
-                    em
-                    Informática para Internet na instituição Senac SP, onde ao finalizar, terei aprimorado meu
-                    conhecimento
-                    tanto em Front-End, Back-End e Mobile</p>
-            </div>
-
-            <div class="xp flex">
-                <h3>Extras</h3>
-                <p class="cardXP">GitHub intermediário. Desenvolvi sozinho a
-                    habilidade de desenhar
-                    realismo. </p>
-            </div>
-        </div>
-    </section>
-
-    <section class="contacts flex" id="contacts">
-        <h2 class="title">Contatos</h2>
-        <div class="socialMedia flex">
-            <a href="https://www.linkedin.com/in/lucas-morais-149556252/">
-                <div class="social flex">
-                    <img src="./img/linkedInIcon.svg" alt="">
-                    <p>LinkedIn</p>
-                </div>
-            </a>
-            <a href="https://github.com/standbytheboy">
-                <div class="social flex">
-                    <img src="./img/githubIcon.svg" alt="">
-                    <p>GitHub</p>
-                </div>
-            </a>
-            <a href="https://wa.me/5511986466484?text=Olá, acabei de vir do seu portfólio!">
-                <div class="social flex">
-                    <img src="./img/whatsappIcon.svg" alt="">
-                    <p>Whatsapp</p>
-                </div>
-            </a>
-            <a href="mailto:moraislcs05@gmail.com">
-                <div class="social flex">
-                    <img src="./img/emailIcon.svg" alt="">
-                    <p>Email</p>
-                </div>
-            </a>
-        </div>
+    <section
+      id="contacts"
+      class="contacts flex"
+      aria-labelledby="title-contacts"
+    >
+      <h2 id="title-contacts" class="title">Contatos</h2>
+      <address class="socialMedia flex">
+        <a href="https://www.linkedin.com/in/lucas-morais-149556252/">
+          <div class="social flex">
+            <img src="./img/linkedInIcon.svg" alt="Ícone do LinkedIn" />
+            <p>LinkedIn</p>
+          </div>
+        </a>
+        <a href="https://github.com/standbytheboy">
+          <div class="social flex">
+            <img src="./img/githubIcon.svg" alt="Ícone do GitHub" />
+            <p>GitHub</p>
+          </div>
+        </a>
+        <a
+          href="https://wa.me/5511986466484?text=Olá, acabei de vir do seu portfólio!"
+        >
+          <div class="social flex">
+            <img src="./img/whatsappIcon.svg" alt="Ícone do WhatsApp" />
+            <p>Whatsapp</p>
+          </div>
+        </a>
+        <a href="mailto:moraislcs05@gmail.com">
+          <div class="social flex">
+            <img src="./img/emailIcon.svg" alt="Ícone de Email" />
+            <p>Email</p>
+          </div>
+        </a>
+      </address>
     </section>
 
     <footer class="flex">
-        <p>Site Desenvolvido por &copy; Lucas Morais - Todos os Direitos Reservados</p>
+      <p>&copy; Lucas Morais - Todos os Direitos Reservados</p>
     </footer>
 
     <script src="./script.js"></script>
-</body>
-
+  </body>
 </html>

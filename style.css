@@ -62,6 +62,10 @@ button:hover {
     margin: 3px 0;
 }
 
+button {
+    border: none;
+}
+
 /* =================== Menu Hambúrguer =================== */
 
 @media (max-width: 768px) {
@@ -470,6 +474,11 @@ footer p {
 }
 
 @media (max-width: 568px) {
+    .me {
+        width: 250px;
+        height: 250px;
+    }
+
     .xp {
         padding: 0;
     }
@@ -495,6 +504,10 @@ footer p {
 }
 
 @media (max-width: 480px) {
+    .me {
+        display: none;
+    }
+
     .media p {
         width: 90%;
         margin: 0 auto;
@@ -520,10 +533,6 @@ footer p {
 }
 
 @media (max-width: 360px) {
-    .me {
-        width: 220px;
-        height: 200px;
-    }
 
     .modal-content {
         margin: 200px auto;

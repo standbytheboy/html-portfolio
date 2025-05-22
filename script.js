@@ -36,6 +36,19 @@ window.addEventListener('click', function(event) {
     });
 });
 
+// Fecha todos os modais ao pressionar a tecla ESC
+document.addEventListener('keydown', function(event) {
+    if (event.key === "Escape" || event.key === "Esc") {
+        const modals = document.querySelectorAll('.modal');
+        modals.forEach(function(modal) {
+            if (modal.style.display === "block") {
+                modal.style.display = "none";
+            }
+        });
+    }
+});
+
+
 const mobileMenu = document.getElementById('mobile-menu');
 const navLinks = document.querySelector('.nav-links');
 
