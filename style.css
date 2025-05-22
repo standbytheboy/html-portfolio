@@ -66,6 +66,19 @@ button {
     border: none;
 }
 
+/* =================== Animação das Sections =================== */
+
+.project, .experience, .title {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease;
+  }
+  
+  .project.show, .experience.show, .title.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
 /* =================== Menu Hambúrguer =================== */
 
 @media (max-width: 768px) {

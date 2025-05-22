@@ -55,3 +55,28 @@ const navLinks = document.querySelector('.nav-links');
 mobileMenu.addEventListener('click', () => {
     navLinks.classList.toggle('active'); // Alterna a classe 'active' para mostrar/ocultar o menu
 });
+
+// Animações das Sections
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+}, { threshold: 0.2 });
+
+document.querySelectorAll(".project, .experience, .title").forEach(el => observer.observe(el));
+
+
+// Animação do H1
+const text = "LUCAS MORAIS";
+let i = 0;
+function type() {
+  if (i < text.length) {
+    document.querySelector("h1").textContent += text.charAt(i);
+    i++;
+    setTimeout(type, 200);
+  }
+}
+type();
