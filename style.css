@@ -430,6 +430,10 @@ footer p {
     height: 250px;
   }
 
+  h1 {
+    text-align: center;
+  }
+
   .xp {
     padding: 0;
   }
